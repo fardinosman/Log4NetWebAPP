@@ -1,0 +1,66 @@
+﻿@model WebApplication2.Models.Logs
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Logs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.logDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.logDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.logThread)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.logThread)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.logLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.logLevel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.logSource)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.logSource)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.logMessage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.logMessage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exception)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
