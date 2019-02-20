@@ -10,7 +10,7 @@ using WebApplication2.Models;
 
 namespace WebApplication2.Controllers
 {
-    public class LogsController : Controller //
+    public class LogsController : Controller //dd
     {
         private ApplicationDBEntities db = new ApplicationDBEntities();
 
